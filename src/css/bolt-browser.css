@@ -3,7 +3,7 @@ h1 {
     border-bottom: 5px solid #507EC0;
     border-top: 5px solid #507EC0;
     padding-left: 10px;
-    padding-right: 10px:
+    padding-right: 10px;
 }
 
 body {
@@ -23,18 +23,9 @@ body {
     overflow: scroll;
 }
 
-div.passed span.error-container {
+div.passed span.error-container, .result {
     display: none;
 }
-
-.result {
-    display: none;
-}
-
-.time {
-
-}
-
 .done {
     font-size: small;
     text-align: right;
@@ -42,7 +33,7 @@ div.passed span.error-container {
 }
 
 .scratch {
-    margin: 0px 10px;
+    margin-inline: 10px;
 }
 
 span.testfile {
@@ -50,15 +41,13 @@ span.testfile {
     font-size: small;
 }
 
-div.failed {
+div.failed, div.passed {
     border: 3px solid #FFB3B3;
     border-bottom-width: 15px;
     margin: 5px;
 }
 div.passed {
-    border: 3px solid #AEF5AF;
-    border-bottom-width: 15px;
-    margin: 5px;
+    border-color: #AEF5AF;
 }
 
 
